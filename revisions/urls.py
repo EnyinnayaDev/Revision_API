@@ -3,4 +3,5 @@ from . import views
 
 urlpatterns = [
     path("docs/<int:doc_id>/revisions", views.revision_list, name="revision-list"),
+    path("compare", views.compare_revisions, name="compare-revisions"),
 ]
