@@ -4,7 +4,7 @@ from .models import Document, Revision
 
 @admin.register(Document)
 class DocumentAdmin(admin.ModelAdmin):
-    list_display = ("title", "created_at", "updated_at")
+    list_display = ("title", "created_at")
     search_fields = ("title",)  
     
 @admin.register(Revision)
